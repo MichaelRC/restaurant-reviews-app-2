@@ -27,6 +27,15 @@ let urlsToCache = [
 /*
     Activating Service Worker
 */
+if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('sw.js')
+    .then( ()=> {
+        console.log('Service Worker Registered.');
+    })
+    .catch( ()=> {
+        console.log('Not Registered, contact admin.');
+    });
+}
 
 self.addEventListener('activate', (event)=>{
     event.waitUntil(
