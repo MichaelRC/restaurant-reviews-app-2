@@ -7,3 +7,12 @@ if ('serviceWorker' in navigator) {
         console.log('Failed to Register Service Worker.')
     });
 }
+
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+    // can add additional settings here.
+});
+
+if (lazyLoadInstance) {
+    lazyLoadInstance.update();
+}
