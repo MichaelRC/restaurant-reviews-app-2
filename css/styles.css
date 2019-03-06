@@ -15,7 +15,7 @@ body {
 	background-color: #fdfdfd;
 	margin: 0;
   position:relative;
-  max-width: 100%;
+  width: 100%;
 }
 
 ul, 
@@ -389,12 +389,17 @@ label {
 
 /* ====================== Media Queries ====================== */
 
-@media only screen and (max-width: 350px) {
-  .filter-options {
-    justify-content: left;
+@media only screen and (max-width: 320px) {
+  body, 
+  td, 
+  th,
+  p {
+    line-height: 0;
   }
-  label {
-    font-size: 2px;
+
+  #map {
+    width: 300px;
+    height: 150px;
   }
 }
 
