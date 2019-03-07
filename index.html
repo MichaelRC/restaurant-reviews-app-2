@@ -29,15 +29,13 @@
     <label id="mapbox-app" class="mapbox-app">Mapbox map application</label>
     <section>
       <div class="filter-options">
-        <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <label id="neighborhood-label" class="filter-label">by neighborhoods</label>
+        <h2><--Filter Results--></h2>
         <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
-        <label id="cuisines-label" class="filter-label">by cuisines</label>
       </div>
       <ul id="restaurants-list"></ul>
     </section>
@@ -48,9 +46,6 @@
   <!-- Service Worker Files -->
   <script type="application/javascript" charset="utf-8" src="js/sw-reg.js"></script>
   <script type="application/javascript" charset="utf-8" src="sw.js"></script>
-  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initMap"></script> -->
-  <div id='map' style='width: 400px; height: 300px;'></div>
-  
   <!-- MapBox GL JS files -->
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoibWljaGFlbHJjIiwiYSI6ImNqc3hoZTNhYTAyOXo0M3I1dTV3cWdyejMifQ.tBQ1xrlLmcjnYikBEw3_eg';
